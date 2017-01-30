@@ -1,0 +1,31 @@
+{
+    "extends": "eslint:recommended",
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true,
+        "es6": true,
+        "jasmine": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "semi": ["error", "always"],
+        "no-console": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    },
+    "globals": {
+        "console": false,
+        "process.env": false,
+        "IS_DEBUG": false,
+        "IS_PRODUCTION": false
+    }
+}
